@@ -1,2 +1,2 @@
 # YouTube-clone
-youtube clone with a twist
+clickbait at its finest
