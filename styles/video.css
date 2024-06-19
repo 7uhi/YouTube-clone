@@ -1,0 +1,134 @@
+.thumbnail {
+  width: 100%;
+
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.profile-picture {
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+}
+
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+  padding: 4px;
+  border-radius: 2px;;
+}
+
+.video-author,
+.video-stats {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.video-author {
+  margin-bottom: 4px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap:40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-gid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.channel-picture {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+  /* position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.channel-picture:hover .profile-tooltip {
+  opacity: 1;
+}
+
+.profile-tooltip {
+  background-color: white;
+  position: absolute;
+  bottom: -67px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  font-family: roboto, arial;
+  cursor: pointer;
+  width: 155px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+}
+
+.profile-picture-tooltip {
+  width: 45px;
+  border-radius: 22.5px;
+}
+
+.profile-info-tooltip {
+  flex: 1;
+  margin-left: 6px;
+}
+
+.profile-name-tooltip {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.profile-subs {
+  color: grey;
+  font-size: 10px;
+}
